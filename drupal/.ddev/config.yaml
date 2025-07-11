@@ -308,4 +308,4 @@ hooks:
    - exec: "echo DB import after start..."
 
   pre-stop:
-     - exec-host: "ddev drush cr && ddev drush cex -y && ddev drush sql-dump --gzip --result-file=../db/site.sql.gz"
+     - exec-host: "ddev drush cr && ddev drush cex -y && ddev drush sql-dump --gzip --result-file=../db/site.sql"
